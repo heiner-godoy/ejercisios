@@ -39,7 +39,7 @@ class tragamonedas:
                     self.table()
                     print("")
                     for i, (item, valor) in enumerate(self.ruleta):
-                        print(f"{i+1}. {item}: {valor}")
+                        print(f"{i+0}. {item}: {valor}")
                     indice = int(input("Ingrese nuemro del indice: "))
                     print()
                     if indice >= 0 and indice < len(self.ruleta):
@@ -51,7 +51,7 @@ class tragamonedas:
                             if premio == self.ruleta[indice]:
                                 resultado = (apostar*premio[1])
                                 self.credits +=resultado
-                                print("Winner!", premio[0])
+                                print("!Winner!")
                         else:
                             print("valor invalido")
                     else:
